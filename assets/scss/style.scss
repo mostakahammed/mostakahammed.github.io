@@ -1,6 +1,6 @@
 @import "_colors";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -25,36 +25,57 @@ body {
   justify-content: center;
   align-items: center;
 
+  background-image: url(../images/bg_img.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 20%;
+
   .wrapper{
     background-color: $textWhite;
     margin: 0% 10%;
-    border-bottom: 3px solid $mainColor;
+    border-bottom: 3px solid $textDark;
 
     .header{
       text-align: center;
-      background-color: $mainColor;
-      padding: 8px 0px;
+      background-color: $textDark;
+      padding: 8px 15px;
 
       h1{
+        text-align: center;
         font-size: 2rem;
         color: $textWhite;
-        font-weight: 800;
         margin: 0;
-      }
-      p{
-        color: $textLight;
-        margin: 0;
+        font-family: 'Damion', cursive;
       }
     }
 
     .body{
       padding: 8% 10%;
+      max-width: 760px;
 
       .stepWrapper{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+
+        .about{
+          border-right: none;
+          border-bottom: none;
+        }
+        .education{
+          border-bottom: none;
+        }
+        .course{
+          border-left: none;
+          border-bottom: none;
+        }
+        .work{
+          border-right: none;
+        }
+        .contact{
+          border-left: none;
+        }
 
         a{
           height: 150px;
@@ -80,12 +101,12 @@ body {
           }
 
           &:hover{
-            border: 1px solid $mainColor;
+            background-color: #f6f6f6;
+
             img{
               transform: scale(1.1);
             }
             h5{
-              font-weight: 600;
               color: darkslategrey;
             }
           }

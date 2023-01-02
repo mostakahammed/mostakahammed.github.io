@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Damion&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,35 +19,54 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../images/bg_img.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 20%;
 }
 .home__section .wrapper {
   background-color: #FFFFFF;
   margin: 0% 10%;
-  border-bottom: 3px solid #489B96;
+  border-bottom: 3px solid #23242c;
 }
 .home__section .wrapper .header {
   text-align: center;
-  background-color: #489B96;
-  padding: 8px 0px;
+  background-color: #23242c;
+  padding: 8px 15px;
 }
 .home__section .wrapper .header h1 {
+  text-align: center;
   font-size: 2rem;
   color: #FFFFFF;
-  font-weight: 800;
   margin: 0;
-}
-.home__section .wrapper .header p {
-  color: #DFFFFD;
-  margin: 0;
+  font-family: "Damion", cursive;
 }
 .home__section .wrapper .body {
   padding: 8% 10%;
+  max-width: 760px;
 }
 .home__section .wrapper .body .stepWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+.home__section .wrapper .body .stepWrapper .about {
+  border-right: none;
+  border-bottom: none;
+}
+.home__section .wrapper .body .stepWrapper .education {
+  border-bottom: none;
+}
+.home__section .wrapper .body .stepWrapper .course {
+  border-left: none;
+  border-bottom: none;
+}
+.home__section .wrapper .body .stepWrapper .work {
+  border-right: none;
+}
+.home__section .wrapper .body .stepWrapper .contact {
+  border-left: none;
 }
 .home__section .wrapper .body .stepWrapper a {
   height: 150px;
@@ -67,16 +87,15 @@ body {
 }
 .home__section .wrapper .body .stepWrapper a h5 {
   font-size: 1rem;
-  color: #242424;
+  color: #23242c;
   transition: 0.2s all ease;
 }
 .home__section .wrapper .body .stepWrapper a:hover {
-  border: 1px solid #489B96;
+  background-color: #f6f6f6;
 }
 .home__section .wrapper .body .stepWrapper a:hover img {
   transform: scale(1.1);
 }
 .home__section .wrapper .body .stepWrapper a:hover h5 {
-  font-weight: 600;
   color: darkslategrey;
 }/*# sourceMappingURL=style.css.map */
