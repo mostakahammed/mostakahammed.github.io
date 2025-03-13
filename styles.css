@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Base Styles */
+:root {
+    --bg-color: #1b1b1b;
+    --text-color: #ffffff;
+    --accent-color: #ffffff;
+    --link-color: #ffffff;
+    --link-hover: #cccccc;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Courier New", monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-family: "Literata", serif;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+/* Header & Navigation */
+header {
+    margin-bottom: 3rem;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+.nav-link {
+    color: var(--link-color);
+    text-decoration: none;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--link-hover);
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Content Sections */
+.content-section {
+    display: none;
+    margin-bottom: 3rem;
+    animation: fadeIn 0.5s ease;
+}
+
+.content-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+.inline-link {
+    text-decoration: underline;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 1.5rem;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--link-color);
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--link-hover);
+}
+
+/* Timeline and Project Items */
+.timeline-item,
+.project-item {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.date {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    opacity: 0.8;
+}
+
+.company {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+.project-link {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-info {
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+
+    .nav-link {
+        margin-bottom: 0.5rem;
+    }
+}

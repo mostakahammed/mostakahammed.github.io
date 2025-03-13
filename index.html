@@ -1,67 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mostak Ahammed - Full Stack Software Engineer</title>
-        <!-- =================== Vendor CSS ====================== -->
-        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./assets/css/font-awesome.css">
-        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="./assets/css/animate.min.css">
-        <!-- =================== Custom CSS ====================== -->
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
-    <body>
-        <!------------------------------------------------------------------------------------
-        =============================== Markup Start From Here ===============================
-        ------------------------------------------------------------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="name">Mostak Ahammed</h1>
+            <nav>
+                <a href="#home" class="nav-link active" data-section="home">/home</a>
+                <a href="#about" class="nav-link" data-section="about">/about</a>
+                <a href="#experience" class="nav-link" data-section="experience">/experience</a>
+                <a href="#education" class="nav-link" data-section="education">/education</a>
+                <a href="#projects" class="nav-link" data-section="projects">/projects</a>
+                <a href="#contact" class="nav-link" data-section="contact">/contact</a>
+            </nav>
+        </header>
 
-        <section class="home__section">
-            <div class="wrapper">
-                <div class="header">
-                    <h1> Mostak Ahammed </h1>
+        <main>
+            <section id="home" class="content-section active">
+                <h2>Hi!</h2>
+                <p>I'm John, a Full Stack Developer with a strong background in web technologies, cloud architecture, and UI/UX design. I'm passionate about creating elegant solutions to complex problems and building applications that provide exceptional user experiences.</p>
+                <p>Feel free to explore my <a href="#" class="inline-link" data-section="about">about page</a> or check out my <a href="#" class="inline-link" data-section="projects">projects</a>.</p>
+                
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                 </div>
-                <div class="body">
-                    <div class="stepWrapper">
-                        <a href="#" class="about">
-                            <img src="./assets/images/about.png" alt="">
-                            <h5>About Me</h5>
-                        </a>
-                        <a href="#" class="education">
-                            <img src="./assets/images/education.png" alt="">
-                            <h5>Education</h5>
-                        </a>
-                        <a href="#" class="course">
-                            <img src="./assets/images/course_training.png" alt="">
-                            <h5>Course & Training</h5>
-                        </a>
-                        <a href="#" class="work">
-                            <img src="./assets/images/work_project.png" alt="">
-                            <h5>Work & Projects</h5>
-                        </a>
-                        <a href="#" class="experience">
-                            <img src="./assets/images/experiences.png" alt="">
-                            <h5>Experiences</h5>
-                        </a>
-                        <a href="#" class="contact">
-                            <img src="./assets/images/contact.png" alt="">
-                            <h5>Contacts</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!------------------------------------------------------------------------------------
-        =============================== Markup  End From There ===============================
-        ------------------------------------------------------------------------------------->
-        <!-- ==================== Vendor JS ====================== -->
-        <script src="./assets/js/jquery-3.6.1.min.js"></script>
-        <script src="./assets/js/bootstrap.bundle.min.js"></script>
-        <script src="./assets/js/font-awesome.js"></script>
-        <!-- ==================== Custom JS ====================== -->
-        <script src="./assets/js/main.js"></script>
-    </body>
+            <section id="about" class="content-section">
+                <h2>About Me</h2>
+                <p>I'm a passionate developer with over 5 years of experience building web applications and digital experiences. My approach combines technical expertise with a keen eye for design and user experience.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</p>
+                <p>My technical skills include:</p>
+                <ul>
+                    <li>Frontend: HTML, CSS, JavaScript, React, Vue</li>
+                    <li>Backend: Node.js, Express, Python, Django</li>
+                    <li>Database: MongoDB, PostgreSQL, MySQL</li>
+                    <li>DevOps: Docker, AWS, CI/CD pipelines</li>
+                </ul>
+            </section>
+
+            <section id="experience" class="content-section">
+                <h2>Experience</h2>
+                
+                <div class="timeline-item">
+                    <div class="date">2021 - Present</div>
+                    <h3>Senior Full Stack Developer</h3>
+                    <div class="company">Tech Innovations Inc.</div>
+                    <p>Leading development of scalable web applications using React and Node.js. Implementing CI/CD pipelines and mentoring junior developers.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="date">2018 - 2021</div>
+                    <h3>Web Developer</h3>
+                    <div class="company">Digital Solutions Ltd.</div>
+                    <p>Developed responsive websites and e-commerce platforms. Collaborated with design team to implement UI/UX improvements.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="date">2016 - 2018</div>
+                    <h3>Junior Developer</h3>
+                    <div class="company">WebCraft Studios</div>
+                    <p>Assisted in building and maintaining client websites. Implemented responsive designs and interactive features.</p>
+                </div>
+            </section>
+
+            <section id="education" class="content-section">
+                <h2>Education</h2>
+                
+                <div class="timeline-item">
+                    <div class="date">2014 - 2016</div>
+                    <h3>Master of Computer Science</h3>
+                    <div class="company">University of Technology</div>
+                    <p>Specialized in web technologies and distributed systems. Graduated with honors.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="date">2010 - 2014</div>
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <div class="company">State University</div>
+                    <p>Focused on software engineering and database systems. Participated in coding competitions.</p>
+                </div>
+            </section>
+
+            <section id="projects" class="content-section">
+                <h2>Projects</h2>
+                
+                <div class="project-item">
+                    <div class="date">Mar 2023</div>
+                    <h3><a href="#" class="project-link">E-commerce Platform</a></h3>
+                    <p>A full-featured online store built with React, Node.js, and MongoDB. Includes product management, cart functionality, and payment processing.</p>
+                </div>
+                
+                <div class="project-item">
+                    <div class="date">Nov 2022</div>
+                    <h3><a href="#" class="project-link">Task Management App</a></h3>
+                    <p>A productivity application with drag-and-drop interface, user authentication, and real-time updates using Socket.io.</p>
+                </div>
+                
+                <div class="project-item">
+                    <div class="date">Jul 2022</div>
+                    <h3><a href="#" class="project-link">Weather Dashboard</a></h3>
+                    <p>A responsive weather application that displays current conditions and forecasts using data from multiple weather APIs.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="content-section">
+                <h2>Contact</h2>
+                <p>Feel free to reach out if you'd like to collaborate on a project or just want to connect.</p>
+                
+                <div class="contact-info">
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                    <p><strong>Location:</strong> New York, NY</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
