@@ -145,8 +145,9 @@ a:hover {
 /* Timeline and Project Items */
 .timeline-item,
 .project-item {
-    margin-bottom: 2rem;
+    margin: 1rem 0;
     position: relative;
+    border-bottom: 1px solid #55555533;
 }
 
 .date {
